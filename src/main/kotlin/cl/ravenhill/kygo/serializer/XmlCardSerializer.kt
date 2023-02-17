@@ -3,7 +3,7 @@ package cl.ravenhill.kygo.serializer
 import cl.ravenhill.kygo.cards.AbstractCard
 
 
-class XmlCardSerializer(card: AbstractCard) : AbstractCardSerializer() {
+class XmlCardSerializer : AbstractCardSerializer() {
   override fun serialize(card: AbstractCard): String {
     return """
       |<Card>
