@@ -1,6 +1,5 @@
 package cl.ravenhill.kygo
 
-import cl.ravenhill.kygo.cards.AbstractCard
 import cl.ravenhill.kygo.cards.Card
 import cl.ravenhill.kygo.exceptions.InvalidStatException
 import kotlin.math.max

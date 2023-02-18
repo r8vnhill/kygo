@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccc604d4-fb96-4a05-962c-8a98c2875a99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractHealthMagicCard.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractMagicCard.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/Card.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/CrimsonBeverage.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/IndigoPotion.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/SaucepanOfAvidity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/exceptions/InvalidStatException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/CrimsonBeverageTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/IndigoPotionTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/SaucepanOfAvidity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="ccc604d4-fb96-4a05-962c-8a98c2875a99" name="Changes" comment="FEAT Adds Magic Cards">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/effects/DrawCardsEffect.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/effects/Effect.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/effects/ModifyHealthEffect.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/effects/DrawCardsEffectTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/effects/ModifyHealthEffectTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractCard.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/XmlCardSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/XmlCardSerializer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -76,13 +68,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="cl.ravenhill.kygo.effects" />
       <recent name="cl.ravenhill.kygo.cards" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="cl.ravenhill.kygo.cards" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotest.DrawCardsEffectTest: DrawCardsEffect should draw the given amount of cards">
     <configuration name="Tests in 'kygo.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,8 +97,24 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="DrawCardsEffectTest: DrawCardsEffect should draw the given amount of cards" type="ioKotest" factoryName="Kotest" temporary="true" defaultName="singleModule">
+      <module name="kygo.test" />
+      <option name="jrePath" value="" />
+      <option name="jrePathEnabled" value="false" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$MODULE_WORKING_DIR$" />
+      <option name="programParameters" value="" />
+      <option name="specName" value="cl.ravenhill.kygo.effects.DrawCardsEffectTest" />
+      <option name="testPath" value="DrawCardsEffect should draw the given amount of cards" />
+      <option name="packageName" value="" />
+      <option name="vmparams" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotest.DrawCardsEffectTest: DrawCardsEffect should draw the given amount of cards" />
         <item itemvalue="Gradle.Tests in 'kygo.test'" />
       </list>
     </recent_temporary>
@@ -120,11 +129,23 @@
       <updated>1676598094419</updated>
       <workItem from="1676598096348" duration="6302000" />
       <workItem from="1676645874116" duration="9711000" />
-      <workItem from="1676663597551" duration="3365000" />
+      <workItem from="1676663597551" duration="6492000" />
     </task>
+    <task id="LOCAL-00001" summary="FEAT Adds Magic Cards">
+      <created>1676671978744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676671978744</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FEAT Adds Magic Cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT Adds Magic Cards" />
   </component>
 </project>
