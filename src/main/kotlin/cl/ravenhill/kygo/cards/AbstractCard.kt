@@ -1,19 +1,20 @@
 package cl.ravenhill.kygo.cards
 
-import cl.ravenhill.kygo.serializer.AbstractCardSerializer
+import cl.ravenhill.kygo.Player
+import cl.ravenhill.kygo.effects.Effect
 import cl.ravenhill.kygo.serializer.CardSerializer
 
 
-abstract class AbstractCard(name: String, text: String, serializer: CardSerializer) : Card {
-  val name = name
-  val text = text
-  var serializer = serializer
+abstract class AbstractCard(
+  override val name: String,
+  override val text: String,
+  override val effect: Effect,
+  override val serializer: CardSerializer
+) : Card {
 
-  fun toFile(filename: String) {
-    serializer.toFile(this, filename)
-  }
+  override fun toFile(filename: String) = serializer.toFile(this, filename)
 
-  fun serialize(): String {
-    return serializer.serialize(this)
-  }
+  override fun serialize() = serializer.serialize(this)
+
+  override fun useOn(player: Player) = effect.useOn(player)
 }

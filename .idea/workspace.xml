@@ -4,14 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccc604d4-fb96-4a05-962c-8a98c2875a99" name="Changes" comment="FEAT Adds Magic Cards">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/effects/DrawCardsEffect.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/effects/Effect.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/effects/ModifyHealthEffect.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/effects/DrawCardsEffectTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/effects/ModifyHealthEffectTest.kt" afterDir="false" />
+    <list default="true" id="ccc604d4-fb96-4a05-962c-8a98c2875a99" name="Changes" comment="FEAT Adds effects">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/TrapCard.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/TestFactories.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/MagicCardTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/Player.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractHealthMagicCard.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractMagicCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/MagicCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/Card.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/Card.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/CrimsonBeverage.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/IndigoPotion.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/MonsterCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/MonsterCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/SaucepanOfAvidity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/AbstractCardSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/AbstractCardSerializer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/CardSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/CardSerializer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/XmlCardSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/XmlCardSerializer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/CrimsonBeverageTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/IndigoPotionTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/SaucepanOfAvidity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/effects/DrawCardsEffectTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/effects/DrawCardsEffectTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +43,7 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -62,7 +75,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -75,7 +88,30 @@
       <recent name="cl.ravenhill.kygo.cards" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotest.DrawCardsEffectTest: DrawCardsEffect should draw the given amount of cards">
+  <component name="RunManager" selected="Gradle.MagicCardTest (1)">
+    <configuration name="MagicCardTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cl.ravenhill.kygo.cards.MagicCardTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Tests in 'kygo.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -112,10 +148,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Run all in kygo.test" type="ioKotest" factoryName="Kotest" defaultName="singleModule">
+      <module name="kygo.test" />
+      <option name="jrePath" value="" />
+      <option name="jrePathEnabled" value="false" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$MODULE_WORKING_DIR$" />
+      <option name="programParameters" value="" />
+      <option name="specName" value="" />
+      <option name="testPath" value="" />
+      <option name="packageName" value="" />
+      <option name="vmparams" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotest.DrawCardsEffectTest: DrawCardsEffect should draw the given amount of cards" />
+        <item itemvalue="Gradle.MagicCardTest (1)" />
         <item itemvalue="Gradle.Tests in 'kygo.test'" />
+        <item itemvalue="Kotest.DrawCardsEffectTest: DrawCardsEffect should draw the given amount of cards" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +181,19 @@
       <updated>1676598094419</updated>
       <workItem from="1676598096348" duration="6302000" />
       <workItem from="1676645874116" duration="9711000" />
-      <workItem from="1676663597551" duration="6492000" />
+      <workItem from="1676663597551" duration="8913000" />
+      <workItem from="1676687710658" duration="427000" />
+      <workItem from="1676740164244" duration="1815000" />
+      <workItem from="1676746546844" duration="1121000" />
+      <workItem from="1676748271795" duration="1590000" />
+      <workItem from="1676753038003" duration="318000" />
+      <workItem from="1676756038113" duration="2292000" />
+      <workItem from="1676763264246" duration="185000" />
+      <workItem from="1676765884302" duration="627000" />
+      <workItem from="1676767759938" duration="183000" />
+      <workItem from="1676925309455" duration="1198000" />
+      <workItem from="1677029522845" duration="1339000" />
+      <workItem from="1677031831079" duration="41000" />
     </task>
     <task id="LOCAL-00001" summary="FEAT Adds Magic Cards">
       <created>1676671978744</created>
@@ -138,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676671978744</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FEAT Adds effects">
+      <created>1676682030418</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676682030418</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +217,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FEAT Adds Magic Cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEAT Adds Magic Cards" />
+    <MESSAGE value="FEAT Adds effects" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT Adds effects" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/kygo$Tests_in__kygo_test_.ic" NAME="Tests in 'kygo.test' Coverage Results" MODIFIED="1676756179082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

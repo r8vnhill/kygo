@@ -1,9 +1,9 @@
 package cl.ravenhill.kygo.serializer
 
-import cl.ravenhill.kygo.cards.AbstractCard
+import cl.ravenhill.kygo.cards.Card
 
 
 interface CardSerializer {
-  fun serialize(card: AbstractCard): String
-  fun toFile(card: AbstractCard, filename: String)
+  fun serialize(card: Card): String
+  fun toFile(card: Card, filename: String)
 }

@@ -1,7 +1,7 @@
 package cl.ravenhill.kygo.effects
 
 import cl.ravenhill.kygo.Player
-import cl.ravenhill.kygo.cards.MonsterCard
+import cl.ravenhill.kygo.cards.MagicCard
 import cl.ravenhill.kygo.serializer.XmlCardSerializer
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
@@ -17,16 +17,16 @@ class DrawCardsEffectTest : FunSpec({
   test("DrawCardsEffect should draw the given amount of cards") {
     val player = Player(
       "Jaiva", 8000, mutableListOf(
-        MonsterCard(
-          "White-eyes Blue Dragon",
-          "Legendary dragon of destruction",
-          3000,
+        MagicCard(
+          "Saucepan of Avidity",
+          "Draw 2 cards",
+          DrawCardsEffect(2),
           XmlCardSerializer()
         ),
-        MonsterCard(
-          "Light Magician",
-          "The ultimate sorcerer with a powerful attack",
-          2500,
+        MagicCard(
+          "Crimson Beverage",
+          "Heal 500 HP",
+          ModifyHealthEffect(500),
           XmlCardSerializer()
         )
       )
