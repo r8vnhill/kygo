@@ -1,6 +1,5 @@
 package cl.ravenhill.kygo.cards
 
-import cl.ravenhill.kygo.serializer.AbstractCardSerializer
 import cl.ravenhill.kygo.serializer.CardSerializer
 
 
@@ -14,13 +13,10 @@ import cl.ravenhill.kygo.serializer.CardSerializer
  * @author <a href="https://www.github.com/r8vnhill">R8V</a>
  */
 abstract class AbstractCard(
-  name: String,
-  text: String,
-  serializer: CardSerializer
+  override val name: String,
+  override val text: String,
+  override var serializer: CardSerializer
 ) : Card {
-  override val name = name
-  override val text = text
-  override var serializer = serializer
 
   override fun toFile(filename: String) {
     serializer.toFile(this, filename)

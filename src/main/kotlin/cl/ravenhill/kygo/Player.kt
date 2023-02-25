@@ -12,19 +12,12 @@ import cl.ravenhill.kygo.cards.Card
  * @author <a href="https://www.github.com/r8vnhill">R8V</a>
  */
 class Player(
-  name: String,
+  val name: String,
   health: Int,
-  deck: MutableList<Card>
-) {
-  val name: String
-  var health: Int private set
   val deck: MutableList<Card>
-
-  init {
-    this.name = name
-    this.health = health
-    this.deck = deck
-  }
+) {
+  var health: Int = health
+    private set
 
   /**
    * Reduces the player's health by the given amount.
