@@ -1,6 +1,7 @@
 package cl.ravenhill.kygo.cards
 
 import cl.ravenhill.kygo.serializer.AbstractCardSerializer
+import cl.ravenhill.kygo.serializer.CardSerializer
 
 
 /**
@@ -15,7 +16,7 @@ import cl.ravenhill.kygo.serializer.AbstractCardSerializer
 abstract class AbstractCard(
   name: String,
   text: String,
-  serializer: AbstractCardSerializer
+  serializer: CardSerializer
 ) : Card {
   override val name = name
   override val text = text

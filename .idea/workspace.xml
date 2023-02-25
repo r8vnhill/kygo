@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccc604d4-fb96-4a05-962c-8a98c2875a99" name="Changes" comment="FEAT Adds effects">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/JsonSerializer.kt" afterDir="false" />
+    <list default="true" id="ccc604d4-fb96-4a05-962c-8a98c2875a99" name="Changes" comment="FEAT Json and YAML serializers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/Card.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/Card.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/MonsterCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/MonsterCard.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="polymorphism" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,7 +82,23 @@
       <option name="presentableId" value="Default" />
       <updated>1676598094419</updated>
       <workItem from="1676598096348" duration="848000" />
+      <workItem from="1677289079104" duration="698000" />
     </task>
+    <task id="LOCAL-00001" summary="FEAT Json and YAML serializers">
+      <created>1677289263268</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677289263268</updated>
+    </task>
+    <task id="LOCAL-00002" summary="FEAT Json and YAML serializers">
+      <created>1677289288504</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677289288504</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +114,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FEAT Json and YAML serializers" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT Json and YAML serializers" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kygo$Tests_in__kygo_test_.ic" NAME="Tests in 'kygo.test' Coverage Results" MODIFIED="1676756179082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
