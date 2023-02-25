@@ -18,11 +18,7 @@ abstract class AbstractCard(
   override var serializer: CardSerializer
 ) : Card {
 
-  override fun toFile(filename: String) {
-    serializer.toFile(this, filename)
-  }
+  override fun toFile(filename: String) = serializer.toFile(this, filename)
 
-  override fun serialize(): String {
-    return serializer.serialize(this)
-  }
+  override fun serialize() = serializer.serialize(this)
 }

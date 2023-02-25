@@ -8,12 +8,10 @@ import cl.ravenhill.kygo.cards.Card
  * @author <a href="https://www.github.com/r8vnhill">R8V</a>
  */
 class JsonSerializer : AbstractCardSerializer() {
-  override fun serialize(card: Card): String {
-    return """
+  override fun serialize(card: Card) = """
       |{
       | "name": "${card.name}",
       | "text": "${card.text}"
       |}
       """.trimMargin()
-  }
 }

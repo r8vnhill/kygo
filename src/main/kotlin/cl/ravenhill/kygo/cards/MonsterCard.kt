@@ -22,7 +22,5 @@ class MonsterCard(
   serializer: CardSerializer
 ) : AbstractCard(name, text, serializer) {
 
-  fun attack(player: Player) {
-    player.takeDamage(this.attack)
-  }
+  fun attack(player: Player) = player.takeDamage(this.attack)
 }

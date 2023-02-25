@@ -23,11 +23,9 @@ class Player(
    * Reduces the player's health by the given amount.
    * This method will not reduce the player's health below 0.
    */
-  fun takeDamage(damage: Int) {
-    if (damage < health) {
-      health -= damage
-    } else {
-      health = 0
-    }
+  fun takeDamage(damage: Int) = if (damage < health) {
+    health -= damage
+  } else {
+    health = 0
   }
 }
