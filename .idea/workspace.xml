@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccc604d4-fb96-4a05-962c-8a98c2875a99" name="Changes" comment="WIP Refactor">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/Card.kt" afterDir="false" />
+    <list default="true" id="ccc604d4-fb96-4a05-962c-8a98c2875a99" name="Changes" comment="FEAT Adds effects">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/JsonSerializer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractCard.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/MonsterCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/MonsterCard.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/AbstractCardSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/AbstractCardSerializer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/CardSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/CardSerializer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/XmlCardSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/XmlCardSerializer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +21,21 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
