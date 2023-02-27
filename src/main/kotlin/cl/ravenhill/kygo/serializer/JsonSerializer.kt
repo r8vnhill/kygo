@@ -1,6 +1,8 @@
 package cl.ravenhill.kygo.serializer
 
-import cl.ravenhill.kygo.cards.Card
+import cl.ravenhill.kygo.cards.MagicCard
+import cl.ravenhill.kygo.cards.MonsterCard
+import cl.ravenhill.kygo.cards.TrapCard
 
 /**
  * Class for JSON card serializers.
@@ -8,10 +10,26 @@ import cl.ravenhill.kygo.cards.Card
  * @author <a href="https://www.github.com/r8vnhill">R8V</a>
  */
 class JsonSerializer : AbstractCardSerializer() {
-  override fun serialize(card: Card) = """
+  override fun serializeMagicCard(card: MagicCard) = """
       |{
-      | "name": "${card.name}",
-      | "text": "${card.text}"
+      |  "name": "${card.name}",
+      |  "text": "${card.text}",
+      |  "type": MagicCard
+      |}
+      """.trimMargin()
+  override fun serializeMonsterCard(card: MonsterCard) = """
+      |{
+      |  "name": "${card.name}",
+      |  "text": "${card.text}",
+      |  "attack": ${card.attack},
+      |  "type": MonsterCard
+      |}
+      """.trimMargin()
+  override fun serializeTrapCard(card: TrapCard) = """
+      |{
+      |  "name": "${card.name}",
+      |  "text": "${card.text}",
+      |  "type": TrapCard
       |}
       """.trimMargin()
 }

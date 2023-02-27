@@ -1,7 +1,5 @@
 package cl.ravenhill.kygo.cards
-
 import cl.ravenhill.kygo.serializer.CardSerializer
-
 /**
  * A card in the game.
  *
@@ -14,17 +12,17 @@ import cl.ravenhill.kygo.serializer.CardSerializer
 interface Card {
   val name: String
   val text: String
-  var serializer: CardSerializer
 
   /**
    * Serialize the card to a file.
    *
    * @param filename The name of the file to write to.
    */
-  fun toFile(filename: String)
-
+  fun toFile(filename: String, serializer: CardSerializer)
   /**
-   * Serialize the card to a string.
+   * Serialize the card with the given serializer.
+   *
+   * @param serializer The serializer to use.
    */
-  fun serialize(): String
+  fun serializeWith(serializer: CardSerializer): String
 }
