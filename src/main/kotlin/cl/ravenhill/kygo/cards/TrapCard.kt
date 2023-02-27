@@ -8,4 +8,7 @@ import cl.ravenhill.kygo.serializer.CardSerializer
  * @author <a href="https://www.github.com/r8vnhill">R8V</a>
  */
 class TrapCard(name: String, text: String, serializer: CardSerializer) :
-    AbstractCard(name, text, serializer)
+    AbstractCard(name, text, serializer) {
+  override fun serializeWith(serializer: CardSerializer) =
+    serializer.serializeTrapCard(this)
+}

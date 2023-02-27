@@ -1,6 +1,9 @@
 package cl.ravenhill.kygo.serializer
 
 import cl.ravenhill.kygo.cards.Card
+import cl.ravenhill.kygo.cards.AbstractMagicCard
+import cl.ravenhill.kygo.cards.MonsterCard
+import cl.ravenhill.kygo.cards.TrapCard
 
 
 /**
@@ -20,4 +23,19 @@ interface CardSerializer {
    * @param filename The name of the file to write to.
    */
   fun toFile(card: Card, filename: String)
+
+  /**
+   * Serializes a magic card to a string.
+   */
+  fun serializeMagicCard(card: AbstractMagicCard): String
+
+  /**
+   * Serializes a monster card to a string.
+   */
+  fun serializeMonsterCard(card: MonsterCard): String
+
+  /**
+   * Serializes a trap card to a string.
+   */
+  fun serializeTrapCard(card: TrapCard): String
 }

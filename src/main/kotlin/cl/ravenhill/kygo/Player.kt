@@ -17,7 +17,6 @@ class Player(
   val deck: MutableList<Card>
 ) {
   var health: Int = health
-    private set
 
   /**
    * Reduces the player's health by the given amount.

@@ -23,4 +23,7 @@ class MonsterCard(
 ) : AbstractCard(name, text, serializer) {
 
   fun attack(player: Player) = player.takeDamage(this.attack)
+
+  override fun serializeWith(serializer: CardSerializer) =
+    serializer.serializeMonsterCard(this)
 }
