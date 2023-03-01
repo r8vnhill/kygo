@@ -1,6 +1,6 @@
 package cl.ravenhill.kygo.serializer
 
-import cl.ravenhill.kygo.cards.MagicCard
+import cl.ravenhill.kygo.cards.AbstractMagicCard
 import cl.ravenhill.kygo.cards.MonsterCard
 import cl.ravenhill.kygo.cards.TrapCard
 
@@ -10,7 +10,7 @@ import cl.ravenhill.kygo.cards.TrapCard
  * @author <a href="https://www.github.com/r8vnhill">R8V</a>
  */
 class YamlSerializer : AbstractCardSerializer() {
-  override fun serializeMagicCard(card: MagicCard) = """
+  override fun serializeMagicCard(card: AbstractMagicCard) = """
       |!!MagicCard
       |name: ${card.name}
       |text: ${card.text}

@@ -1,7 +1,7 @@
 package cl.ravenhill.kygo.serializer
 
 import cl.ravenhill.kygo.cards.Card
-import cl.ravenhill.kygo.cards.MagicCard
+import cl.ravenhill.kygo.cards.AbstractMagicCard
 import cl.ravenhill.kygo.cards.MonsterCard
 import cl.ravenhill.kygo.cards.TrapCard
 
@@ -14,7 +14,7 @@ class XmlCardSerializer : AbstractCardSerializer() {
       |</Card>
       """.trimMargin()
 
-  override fun serializeMagicCard(card: MagicCard) = """
+  override fun serializeMagicCard(card: AbstractMagicCard) = """
       |<MagicCard>
       | <name>${card.name}</name>
       | <text>${card.text}</text>
