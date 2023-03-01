@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccc604d4-fb96-4a05-962c-8a98c2875a99" name="Changes" comment="FEAT Implements card serializations using DD">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/CrimsomBeverage.kt" afterDir="false" />
+    <list default="true" id="ccc604d4-fb96-4a05-962c-8a98c2875a99" name="Changes" comment="FEAT Adds effects">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/CrimsonBeverage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/IndigoPotion.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/CrimsonBeverageTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/IndigoPotionTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/MagicCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractMagicCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/Player.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractMagicCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractMagicCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/MagicCard.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/CardSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/CardSerializer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/JsonSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/JsonSerializer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/XmlCardSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/XmlCardSerializer.kt" afterDir="false" />
@@ -49,10 +53,35 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="oop/dd" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="oop/strategy" />
+                    <option name="lastUsedInstant" value="1677631091" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1677631090" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,7 +90,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2LqUQvZ6Pj6ujHksU3Wf1A1thUH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,6 +101,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -78,6 +110,36 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Tests in 'cl.ravenhill.kygo.cards'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cl.ravenhill.kygo.cards.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'cl.ravenhill.kygo.cards'" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,6 +153,7 @@
       <workItem from="1677378075393" duration="4968000" />
       <workItem from="1677462387494" duration="2083000" />
       <workItem from="1677535186971" duration="630000" />
+      <workItem from="1677687913475" duration="1086000" />
     </task>
     <task id="LOCAL-00001" summary="FEAT Json and YAML serializers">
       <created>1677289263268</created>
@@ -150,6 +213,10 @@
     <MESSAGE value="REFACTOR Simplifies code by defining inline functions" />
     <MESSAGE value="FEAT Implements card serializations using DD" />
     <option name="LAST_COMMIT_MESSAGE" value="FEAT Implements card serializations using DD" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kygo$Tests_in__kygo_test_.ic" NAME="Tests in 'kygo.test' Coverage Results" MODIFIED="1676756179082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
