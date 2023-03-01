@@ -1,8 +1,6 @@
 package cl.ravenhill.kygo.cards
-
 import cl.ravenhill.kygo.Player
 import cl.ravenhill.kygo.serializer.CardSerializer
-
 /**
  * A monster card.
  *
@@ -18,9 +16,8 @@ import cl.ravenhill.kygo.serializer.CardSerializer
 class MonsterCard(
   name: String,
   text: String,
-  val attack: Int,
-  serializer: CardSerializer
-) : AbstractCard(name, text, serializer) {
+  val attack: Int
+) : AbstractCard(name, text) {
 
   fun attack(player: Player) = player.takeDamage(this.attack)
 

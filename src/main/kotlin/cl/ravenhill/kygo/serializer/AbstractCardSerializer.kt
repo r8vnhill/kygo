@@ -1,9 +1,6 @@
 package cl.ravenhill.kygo.serializer
-
 import cl.ravenhill.kygo.cards.Card
 import java.io.File
-
-
 /**
  * Abstract class for card serializers.
  *
