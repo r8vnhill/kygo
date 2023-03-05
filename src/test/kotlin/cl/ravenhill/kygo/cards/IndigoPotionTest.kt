@@ -9,12 +9,10 @@ class IndigoPotionTest : FunSpec({
   val initHealth = 8000
   lateinit var player: Player
   lateinit var indigoPotion: IndigoPotion
-
   beforeTest {
     player = Player("Jaiva", initHealth, mutableListOf())
     indigoPotion = IndigoPotion()
   }
-
   test("Indigo Potion should increase 400 HP") {
     player.health shouldBe initHealth
     indigoPotion.useOn(player)

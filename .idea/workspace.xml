@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccc604d4-fb96-4a05-962c-8a98c2875a99" name="Changes" comment="FEAT Adds effects">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/CrimsonBeverage.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/IndigoPotion.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/CrimsonBeverageTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/IndigoPotionTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/CrimsomBeverage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/effects/Effect.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/effects/ModifyHealthEffect.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/effects/DrawCardsEffectTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/effects/ModifyHealthEffectTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractMagicCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/AbstractMagicCard.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/MagicCard.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/CardSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/CardSerializer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/JsonSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/JsonSerializer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/XmlCardSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/XmlCardSerializer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/YamlSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/serializer/YamlSerializer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/IndigoPotion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/ravenhill/kygo/cards/IndigoPotion.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/IndigoPotionTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/cl/ravenhill/kygo/cards/IndigoPotionTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +105,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotest.All tests in ''">
     <configuration name="Tests in 'cl.ravenhill.kygo.cards'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -134,8 +129,40 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="All tests in ''" type="ioKotest" factoryName="Kotest" temporary="true" defaultName="singleModule">
+      <module name="kygo.test" />
+      <option name="jrePath" value="" />
+      <option name="jrePathEnabled" value="false" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$MODULE_WORKING_DIR$" />
+      <option name="programParameters" value="" />
+      <option name="specName" value="" />
+      <option name="testPath" value="" />
+      <option name="packageName" value="" />
+      <option name="vmparams" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModifyHealthEffectTest" type="ioKotest" factoryName="Kotest" temporary="true" defaultName="singleModule">
+      <module name="kygo.test" />
+      <option name="jrePath" value="" />
+      <option name="jrePathEnabled" value="false" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$MODULE_WORKING_DIR$" />
+      <option name="programParameters" value="" />
+      <option name="specName" value="cl.ravenhill.kygo.effects.ModifyHealthEffectTest" />
+      <option name="testPath" value="" />
+      <option name="packageName" value="" />
+      <option name="vmparams" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotest.All tests in ''" />
+        <item itemvalue="Kotest.ModifyHealthEffectTest" />
         <item itemvalue="Gradle.Tests in 'cl.ravenhill.kygo.cards'" />
       </list>
     </recent_temporary>
@@ -154,6 +181,7 @@
       <workItem from="1677462387494" duration="2083000" />
       <workItem from="1677535186971" duration="630000" />
       <workItem from="1677687913475" duration="1086000" />
+      <workItem from="1677807565373" duration="2187000" />
     </task>
     <task id="LOCAL-00001" summary="FEAT Json and YAML serializers">
       <created>1677289263268</created>
